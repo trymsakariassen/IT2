@@ -1,0 +1,27 @@
+body{
+  margin: 0;
+  background-color: #F9F9F9;
+}
+.container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
+  margin: 10px;
+}
+.containerbox{
+  background-color: white;
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  font-size: 20px;
+  padding: 20px;
+  margin: 10px;
+  border-width: thin;
+  border-style: solid;
+  border-radius: 8px;
+  transition: background-color .5s;
+}
+.IBclean{
+  padding: 10px;
+}

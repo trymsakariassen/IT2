@@ -1,0 +1,17 @@
+.centered {
+  position: absolute;
+  top: 35%;
+  left: 15.5%;
+  transform: translate(-50%, -50%);
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+p{
+  color:white;
+}
+.spørsmål{
+  padding:20px;
+}

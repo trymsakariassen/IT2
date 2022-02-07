@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@200&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Kartlegging</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Oppgave til IT2 Oppstart</h1>
+    </div>
+    <div class="trekkspill">
+      <button type="button" class="trekkspill_knapp">Har du hatt IT1?</button>
+      <div class="trekkspill_content">
+        <p>
+          Nei, jeg hadde foto og grafikk.
+        </p>
+      </div>
+      <button type="button" class="trekkspill_knapp">Hvilke mål har du satt deg i IT2?</button>
+      <div class="trekkspill_content">
+        <p>
+          Målet jeg har er å lære meg HTML, CSS og JavaScript, og kunne bli komfortabel med å lage nettsider og programmere med JS. <br>
+          Å ha IT2 gir meg god motivasjon til å faktisk lære og prøve, jeg har prøvd å lære meg flere ganger før, men kom aldri noe langt.
+        </p>
+      </div>
+      <button type="button" class="trekkspill_knapp">Hva har du lært deg hittil om HTML og CSS?</button>
+      <div class="trekkspill_content">
+        <p>
+          Jeg har lært mye om hvordan nettsider blir bygd opp i de siste ukene, og føler mye mer komfortabel med html og css enn jeg var. <br>
+          Det har vært veldig greit å ha byttet fra visual studio code, jeg syntes atom passer arbeidsflyten min mye bedre.
+        </p>
+      </div>
+      <button type="button" class="trekkspill_knapp">Hva har du lært deg hittil om JavaScript?</button>
+      <div class="trekkspill_content">
+        <p>
+          Jeg har lært litt, lagde et lite gange spill hvor målet er å svare på så mange gangestykker du kan på rad. <br>
+          Hvordan lage en dark mode valgmulighet, og drop down menyer som på denne siden.
+        </p>
+      </div>
+      <button type="button" class="trekkspill_knapp">Hvilke datatyper har vi?</button>
+      <div class="trekkspill_content">
+        <p>
+          String, som representerer tekstdata. <br>
+          Nummer, som representerer tall. <br>
+          Boolean, sant eller falskt. <br>
+          Null og Undefined, som står for ingenting. <br>
+          Symboler, som er unike og uforanderlige primitiv verdier. <br>
+          Bigint, som representerer heltall med vilkårlig presisjon.
+        </p>
+      </div>
+      <button type="button" class="trekkspill_knapp">Hvilke operatorer kan du?</button>
+      <div class="trekkspill_content">
+        <p>
+          Kan noen fordi jeg har drivet med c# relativt mye: <br>
+          +, -, *, /, %, ++, --, ==, <=, >=, <, >, &&, +=, -=, =/, =*, og !=.
+        </p>
+      </div>
+      <button type="button" class="trekkspill_knapp">Hva gjør % som en operator?</button>
+      <div class="trekkspill_content">
+        <p>
+          Moduloperatør. Returnerer resten av to operander.
+        </p>
+      </div>
+      <button type="button" class="trekkspill_knapp">Hva synes du fungerer bra med IT2 timene?</button>
+      <div class="trekkspill_content">
+        <p>
+          Jeg syntes oppgaven om å lage en nettside om oss selv var morsom, <i>selv om nettsiden min var et vrak.</i>  Jeg liker <br>
+          sånne prosjekt aktive oppgavene, litt som denne oppgaven.
+        </p>
+      </div>
+      <button type="button" class="trekkspill_knapp">Hva fungerer ikke fult så bra med IT2 timene?</button>
+      <div class="trekkspill_content">
+        <p>
+          Jeg har egentlig ikke funnet noe ennå, kanskje at lærebok oppgavene ikke er fullt så morsomme, men <br>
+          så er jo de lærerlike, så det er greit gjennomgå dem.
+        </p>
+      </div>
+      <button type="button" class="trekkspill_knapp">Hvordan tenker du at jeg kan endre dette?</button>
+      <div class="trekkspill_content">
+        <p>
+          Syntes det har vært helt greit hittil.
+        </p>
+      </div>
+      <button type="button" class="trekkspill_knapp">Hvordan synes det fremgang i faget går?</button>
+      <div class="trekkspill_content">
+        <p>
+          Jeg mener at det har gått på et godt tempo hittil.
+        </p>
+      </div>
+    </div>
+<script>
+  document.querySelectorAll('.trekkspill_knapp').forEach(button => {
+    button.addEventListener('click', () => {
+      var trekkspillcontent = button.nextElementSibling;
+
+      button.classList.toggle('trekkspill_knapp_active');
+
+      if (button.classList.contains('trekkspill_knapp_active')) {
+        trekkspillcontent.style.maxHeight = trekkspillcontent.scrollHeight + 'px';
+      } else {
+        trekkspillcontent.style.maxHeight = 0;
+      }
+    })
+  })
+</script>
+    <footer><p> </p></footer>
+  </body>
+
+</html>

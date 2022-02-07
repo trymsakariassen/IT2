@@ -1,0 +1,73 @@
+body{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #DBD8D7;
+}
+.topnav {
+  background-color: #423D3B;
+  overflow: hidden;
+  box-shadow: 2px 2px 10px grey;
+}
+.topnav a {
+  float: right;
+  display: block;
+  color: #F9F5EB;
+  text-align: center;
+  padding: 4px 10px;
+  text-decoration: none;
+  font-size: 15px;
+}
+.topnav a:hover {
+  text-decoration: underline;
+  color: white;
+}
+.midnav {
+  background-color: #F9F8F1;
+  overflow: hidden;
+  box-shadow: 2px 2px 10px grey;
+}
+.midnav h1{
+  float: left;
+  display: block;
+  color: #423D3B;
+  padding-left: 50px;
+  padding-right: 30px;
+  margin-top: 32px;
+}
+.midnav a{
+  transition:  border-color .5s,
+              background-color .5s;
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 40px 42px;
+  text-decoration: none;
+  font-size: 20px;
+  border-bottom: 1px;
+  border-bottom-style: solid;
+  border-color: #F9F8F1;
+}
+.midnav a:hover {
+  background-color: #E7DFCC;
+  color: #784231;
+  border-color: #83493A;
+}
+.container{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
+}
+.containerbox{
+    transition: background-color .5s,
+                box-shadow .25s;
+    padding: 20px;
+    margin: 10px;
+    font-size: 20px;
+    background-color: #F0F0EC;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px grey;
+}

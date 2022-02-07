@@ -1,0 +1,21 @@
+html{
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #E9E2E2;
+}
+
+form{
+  background-color: white;
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 50vh;
+  font-size: 2vh;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 2px 4px 15px gray;
+  padding: 30px;
+}
+
+.totalpris{
+}

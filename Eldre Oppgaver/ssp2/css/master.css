@@ -1,0 +1,18 @@
+html{
+  font-family: 'Roboto', sans-serif;
+  padding: 20px;
+}
+button{
+  border-style: solid;
+  border-width: 1px;
+  padding: 20px;
+  font-size: 30px;
+  transition: background-color 1s, color 1s;
+  margin-bottom: 10px;
+}
+button:hover{
+  color: white;
+  background-color: black;
+  transition: background-color 1s, color .5s;
+  cursor:pointer;
+}

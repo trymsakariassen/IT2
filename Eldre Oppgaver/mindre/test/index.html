@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/master.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+  <script src="javascript/calculator.js" defer></script>
+  <meta charset="utf-8">
+</head>
+<body>
+  <div class="topheader" id="topheader">
+    <h2>TEST</h2>
+  </div>
+  <div id="navbar">
+    <a href="">Hjem</a>
+    <a href="">Lorem</a>
+    <a href="">Lorem</a>
+    <button onclick="darkMode()">Toggle Dark Mode</button>
+  </div>
+
+  <div class="content">
+
+    <div class="contentbox fourth">
+      <div class="mattespill">
+        <h1 id="gangestykke">placeholder</h1>
+        <p id="resultat">Lykke Til!</p>
+        <input type="text" id="svar" placeholder="Skriv svar her..." name="svar">
+        <button type="button" name="button" id="svarknapp" onclick="Fresultat()">Svar</button>
+      </div>
+    </div>
+    <div class="contentbox fourth">
+      <div class="PO">
+        <input type="text" id="POinput" > <br>
+        <button type="button" id="PObutton" onclick="POsjekk()">Sjekk Oddetall/Partall</button>
+        <p id="POresultat">Skriv et tall</p>
+      </div>
+    </div>
+    <div class="contentbox">
+      <div class="timecalculator">
+        <input type="number" id="minutesinput" placeholder="Enter minutes here">
+        <button type="button" id="minutesbutton" onclick="timeFunction()">Convert</button>
+        <p id="minutesresult">Skriv minutter i tekstboksen over</p>
+      </div>
+    </div>
+
+    <div class="contentbox half">
+      <p>Quis ingeniis exercitation.Id dolor si export.Pariatur eram legam possumus veniam.Iis noster anim ita mentitum.De illum laborum.Possumus illustriora hic eiusmod.Velit nostrud illustriora.</p>
+    </div>
+    <div class="contentbox third">
+      <p>Quis ingeniis exercitation.Id dolor si export.Pariatur eram legam possumus veniam.Iis noster anim ita mentitum.De illum laborum.Possumus illustriora hic eiusmod.Velit nostrud illustriora.</p>
+    </div>
+
+  </div>
+<script>
+
+  function timeFunction(){
+    var minute = 0;
+    var hours = 0;
+    var input = document.getElementById("minutesinput").value;
+
+    minute = input * 60;
+    document.getElementById("minutesresult").innerHTML = input + " minutter er " + minute + " sekunder";
+  }
+
+    function POsjekk(){
+      let nummer = document.getElementById("POinput").value;
+
+      if(nummer % 2 == 0){
+        document.getElementById("POresultat").innerHTML = nummer + " er et Partall"
+      } else {
+        document.getElementById("POresultat").innerHTML = nummer + " er et Oddetall"
+      }
+    }
+
+
+    window.onscroll = function() {stickNavbar()};
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    function stickNavbar(){
+      if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+    } else {
+    navbar.classList.remove("sticky");
+    }
+    }
+    function darkMode(){
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+    }
+
+    gangestykke = document.getElementById("gangestykke");
+    resultat = document.getElementById("resultat");
+
+    produkt = 0;
+    score = 0;
+
+    function mattespill(){
+      var tall1 = Math.floor(Math.random() * 11) + 1;
+      var tall2 = Math.floor(Math.random() * 11) + 1;
+      produkt = tall1 * tall2;
+      gangestykke.innerHTML = tall1 + " x " + tall2;
+      }
+      function Fresultat(){
+        var svar = document.getElementById("svar").value;
+        if (svar == produkt){
+          score++;
+          if(score == 1){
+            resultat.innerHTML = "Godt Jobbet! <br> Du har greid "+score+"."
+          } else {
+            resultat.innerHTML = "Godt Jobbet <br> Du har greid "+score+" på rad."
+          }
+          document.getElementById("svar").focus();
+          mattespill();
+        } else {
+          resultat.innerHTML = "Det er feil, prøv igjen!"
+          score = 0;
+        }
+      }
+      document.onload = mattespill();
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/master.css">
+    <title></title>
+  </head>
+  <body>
+    <div class="spørsmål">
+      <input id="sporsmal"type="text" name="" value="" placeholder="Ditt Spørsmål....">
+      <button type="button" name="button" onclick="eigthball()">Spør</button>
+    </div>
+    <div class="bilde">
+      <img src="media/8ball.png" alt="" style="width:30%;">
+        <img src="media/Blue.png" alt="" class="centered" style="width:8%;">
+        <p id="ballsvar" class="centered">Spør et Spørsmål!</p>
+    </div>
+
+    <script>
+      function eigthball(){
+
+        let svar = document.getElementById("ballsvar")
+        let ballsvar = [
+        "Det er sikkert.",
+        "Det er absolutt slik.",
+        "Uten tvil.",
+        "Ja definitivt.",
+        "Du kan stole på det.",
+        "Slik jeg ser det, ja.",
+        "Mest sannsynlig.",
+        "Ja.",
+        "Det viser til ja.",
+        "Svar diset, prøv igjen.",
+        "Spør igjen senere.",
+        "Det er bedre å ikke fortelle deg det nå.",
+        "Kan ikke forutsi nå.",
+        "Konsentrer deg og spør igjen.",
+        "Ikke stole på det.",
+        "Mitt svar er nei.",
+        "Mine kilder sier nei.",
+        "Svært tvilsomt.",
+        "Nei",
+        "Absolutt ikke"
+      ];
+        let svaret = ballsvar[Math.floor(Math.random()* ballsvar.length)];
+
+        if(document.getElementById("sporsmal").value.length == 0){
+                    svar.innerHTML = "Du må skrive noe for å få et svar...";
+        } else {
+          svar.innerHTML = ""+ svaret +"";
+        }
+      }
+    </script>
+
+  </body>
+</html>

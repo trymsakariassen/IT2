@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="dicearea">
+
+    </div>
+    <button type="button" name="button" onclick="yatzykast()">Kast Terninger</button>
+    <p id="antallKastID">Placeholder</p>
+
+    <script type="text/javascript">
+
+      let antallKast = 3;
+      let kankaste = true;
+
+      let die1 = document.createElement("img");
+
+      function yatzykast(){
+
+        if (antallKast > 0){
+          antallKast--;
+          document.getElementById("antallKastID").innerHTML = antallKast;
+          kankaste = true;
+          yatzy();
+      } else {
+          document.getElementById("antallKastID").innerHTML = "Du har ikke flere kast :/"
+          kankaste = false;
+      }
+    }
+    function yatzy(){
+
+      var muligResulater = [1, 2, 3, 4, 5, 6];
+      var tall;
+      var antallKast = 5;
+      var kastet = [];
+      const antall = {};
+      let førsteTall = kastet[0];
+      let antallYatzy = 0;
+
+      for (let i = 1; i <= 1; i++){
+        while (antallKast > 0) {
+          tall = muligResulater[Math.floor(Math.random()*muligResulater.length)];
+          kastet.push(tall);
+          antallKast--;
+          console.log(tall);
+        }
+    }
+  }
+    </script>
+  </body>
+</html>

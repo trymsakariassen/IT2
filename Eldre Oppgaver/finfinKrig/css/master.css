@@ -1,0 +1,81 @@
+html {
+  height: 100%;
+}
+body{
+  background-color: #D8E4E7;
+}
+.header{
+  background-color: white;
+  margin: 20px;
+  padding: 40px;
+  border-radius: 20px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-size: 38px;
+}
+.body2 {
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  background-color: #D8E4E7;
+  padding: 60px;
+}
+.card {
+  margin-left: 20px;
+  position: relative;
+  width: 210px;
+  height: 300px;
+
+}
+p{
+  font-size: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.card img{
+  max-width:100%;
+  max-height:100%;
+  object-fit: contain;
+  position: absolute;
+}
+img{
+  max-width:100%;
+  max-height:100%;
+  object-fit: contain;
+}
+.dekk{
+  margin: 40px;
+  position: relative;
+  width: 105px;
+  height: 150px;
+  text-align: center;
+}
+button{
+  font-family: 'Prompt', sans-serif;
+  margin: 5px;
+  padding: 30px;
+  font-size: 20px;
+  border-style: none;
+  border-radius: 6px;
+  color: black;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  transition: box-shadow .5s,background-color.5s, color .25s;
+}
+button:hover{
+  cursor: pointer;
+  color: white;
+  background-color: #34495E;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  transition: box-shadow .5s,background-color.5s, color .25s;
+}
+.buttons{
+  display: block;
+  text-align: center;
+}
+.hidden{
+  display: none;
+}

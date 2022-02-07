@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Breaking Bad</title>
+  <link rel="stylesheet" href="css/master.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+</head>
+<body>
+  <div id="navbar">
+    <img src="media/logo.png" style="width:140px;"alt="">
+  </div>
+  <div class="container">
+    <div class="container-box" id="background">
+      <img src="media/allwalter.png" class="stretch"alt="">
+    </div>
+    <div class="container-box overlap text">
+      <img src="media/award.png" class="objectfit"alt="" style="width:50%;">
+    </div>
+  </div>
+  <div class="container black">
+    <div class="container-box text1 half black" style="padding-top:60px; padding-bottom:60px;">
+      Breaking Bad follows protagonist Walter White (Bryan Cranston), a chemistry teacher who lives in New Mexico with his wife (Anna Gunn) and teenage son (RJ Mitte) who has cerebral palsy. White is diagnosed with Stage III cancer and given a prognosis of two years left to live. With a new sense of fearlessness based on his medical prognosis, and a desire to secure his family's financial security, White chooses to enter a dangerous world of drugs and crime and ascends to power in the world. The series explores how a fatal diagnosis such as White's releases a typical man from the daily concerns and constraints of normal society and follows his transformation from mild family man to a kingpin of the drug trade. <br>
+      <br>
+      <b>CREATOR </b><br>
+      Vince Gilligan <br>
+      <br>
+      <b>STARRING</b><br>
+      Bryan Cranston, <br>
+      Anna Gunn, <br>
+      Aaron Paul, <br>
+      Dean Norris, <br>
+      Betsy Brandt, <br>
+      RJ Mitte, <br>
+      Bob Odenkirk, <br>
+      Giancarlo Esposito, <br>
+      Jonathan Banks.
+    </div>
+    <div class="container-box netflix">
+      <h1>Where to watch <br></h1>
+      <button type="button" name="button">Watch Teaser</button>
+      <button type="button" name="button">Watch on Netflix</button>
+      <button type="button" name="button">Watch on Amazon Video</button> <br>
+      <button type="button" name="button">Episode List</button>
+    </div>
+  </div>
+  <div class="container">
+      <div class="container-box black" style="padding-bottom:20px;">
+        <img id="imgcon"src="media/ozymandias.jpg" alt="Ozymandias" style="width:24.5%; padding-left: 12px;" onclick="imgGallery(this);">
+        <img id="imgcon"src="media/buyout.jpg" alt="Buyout" style="width:24.5%" onclick="imgGallery(this);">
+        <img id="imgcon"src="media/saymyname.jpg" alt="Say my name" style="width:24.5%" onclick="imgGallery(this);">
+        <img id="imgcon"src="media/felina.jpg" alt="Felina" style="width:24.5%" onclick="imgGallery(this);">
+      </div>
+    <div class="imgcontainer">
+      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      <img id="expandedImg" style="width:100%">
+      <div id="imgtext"></div>
+</div>
+  </div>
+  <div class="container">
+    <div class="container-box text2 full">
+      <h1 style="padding-left:30px;">Main Characters</h1>
+    </div>
+    <div class="container-box text2 third borderbox">
+      <p class="paddingtext">
+        <b class="textalign">Walter White </b><br>
+        <img src="media/walter.jpg" class="objectfit paddingtext" alt="" style="float:right;"> <br>
+        Bryan Cranston as Walter White – a high school chemistry teacher who, shortly after his 50th birthday, is diagnosed with Stage III lung cancer and turns to making meth to secure his family's finances. As his shady business progresses, Walter gains a notorious reputation under the alias of "Heisenberg". Cranston stated that, though he enjoyed doing comedy, he decided he
+... should really focus on doing something else. But I think any good drama worth its weight always has a sprinkling of comedy in it, because you can ease the tension to an audience when it's necessary, and then build it back up again. Walt White has no clue he's occasionally funny, but as an actor, I recognize when there are comedic moments and opportunities.</p>
+    </div>
+    <div class="container-box text2 third borderbox">
+      <p class="paddingtext">
+        <b class="textalign">Skyler White </b><br>
+        <img src="media/skyler.jpg" class="objectfit paddingtext" alt="" style="float:right;"> <br>
+        Anna Gunn as Skyler White – Walter's wife who was pregnant with their second child before his diagnosis and who becomes increasingly suspicious of her husband after he begins behaving in unfamiliar ways. Gunn sees Skyler as "grounded, tough, smart and driven". Gunn sees Skyler's stalled writing career as her biggest dream, saying, "I think she really deep down yearns to be an artist and to be creative and productive."</p>
+    </div>
+    <div class="container-box text2 third ">
+      <p class="paddingtext">
+        <b class="textalign">Jesse Pinkman </b><br>
+        <img src="media/jesse.jpg" class="objectfit paddingtext" alt="" style="float:right;"> <br>
+Aaron Paul as Jesse Pinkman – Walter's cooking partner and former student. Paul sees Jesse as a funny kid. "He's just this lost soul – I don't think he's a bad kid, he just got mixed in the wrong crowd." Paul elaborated on the character's background, saying, "He doesn't come from an abusive, alcoholic background. But maybe he just didn't relate to his father, maybe his father was too strict and too proper for Jesse." Paul compared the character's relationship with Walt to The Odd Couple.    </div>
+  </div>
+  <div class="container black" style="margin-top:20px;">
+    <div class="container-box black text3" style="padding:20px;">
+      All tekst kopiert fra Sony og Wikipedia <br>
+      © 2021 Sony Pictures Digital Productions Inc. All rights reserved
+    </div>
+  </div>
+<script>
+
+    window.onscroll = function() {stickNavbar()};
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    function stickNavbar(){
+      if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+    } else {
+    navbar.classList.remove("sticky");
+
+    }
+    }
+    function imgGallery(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+
+}
+    </script>
+</body>
+</html>

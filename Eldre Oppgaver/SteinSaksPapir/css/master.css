@@ -1,0 +1,27 @@
+html{
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.p1C{
+  font-size: 30px;
+  padding: 20px;
+}
+button{
+  margin-left: 20px;
+  padding: 10px;
+  font-size: 30px;
+  background-color: white;
+  transition: opacity .25s, background-color .25s;
+}
+button:hover{
+  margin-left: 20px;
+  padding: 10px;
+  font-size: 30px;
+  background-color: #F0F0F0;
+  transition: background-color .25s;
+}
+h1 {
+  margin: 20px;
+  font-size: 40px;
+}

@@ -1,0 +1,115 @@
+body{
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  background-color: #caced3;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+.topnav{
+  background-color: #35363a;
+  padding:5px;
+  padding-left: 15px;
+}
+.topnav a{
+  font-family: 'Roboto', sans-serif;
+  color: #f7f1ee;
+  padding-right: 20px;
+  text-decoration: none;
+}
+.topheader{
+  background-color: #f7f1ee;
+  padding: 5px;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+.containerleft{
+  float: left;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
+  width: 20%;
+  height: 1040px;
+  background-color: #eee3dd;
+}
+
+.container{
+    background-color: #f2e9e4;
+  object-fit: contain;
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+  padding: 20px;
+  text-align: center;
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+  border-bottom-color: #caced3;
+  border-right-style: solid;
+  border-right-width: thin;
+  border-right-color: #f2e9e4 ;
+  transition: border-color .25s,
+              background-color .25s;
+}
+.container:hover{
+  background-color: #caced3;
+  border-right-style: solid;
+  border-right-width: thin;
+  border-right-color: #6b9080;
+}
+.container2{
+  background-color:#eee3dd;
+  object-fit: contain;
+  color: black;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  padding: 30px;
+  text-align: center;
+}
+.containerright{
+  display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
+}
+.container3{
+  width: 29.5%;
+  background-color: #f7f1ee;
+  border-radius: 15px;
+  object-fit: contain;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  margin: 10px;
+  padding: 17px;
+  text-align: center;
+  box-shadow: 1px 1px 2px grey;
+  transition: box-shadow .25s;
+}
+.container3:hover{
+  box-shadow: 2px 2px 5px grey;
+}
+.container3 h1{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+}
+img{
+  max-width:100%;
+  max-height:100%;
+  border-radius: 5px;
+}
+footer{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: #35363a;
+    padding: 5px;
+    text-align: right;
+}
+footer p{
+  padding-right: 20px;
+}

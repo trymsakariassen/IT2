@@ -1,0 +1,51 @@
+html{
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+body{
+  margin:0;
+  background-color: #white;
+}
+.header{
+  font-size: 20px;
+  padding: 20px;
+  background-color: #14213d;
+  text-align: center;
+  color: #ffffff;
+}
+.trekkspill_knapp {
+  transition: background-color .25s, color .25s, width 1.3s ease;
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  background-color: #ffffff;
+  color: #14213d;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 23px;
+}
+.trekkspill_knapp:hover{
+  color: #14213d;
+  cursor: pointer;
+  transition: background-color .25s;
+  background-color: #e5e5e5;
+}
+.trekkspill_knapp::after{
+  padding-left: 10px;
+  content: '\25be';
+}
+.trekkspill_knapp_active{ background: #edb050; color:#000000;}
+.trekkspill_knapp_active::after{content: '\25b4';}
+
+.trekkspill_content{
+  color: #14213d;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s;
+  background-color: #e5e5e5;
+  padding: 0 15px;
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  font-weight: bold;
+  text-align: center;
+}

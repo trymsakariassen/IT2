@@ -1,0 +1,117 @@
+body{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #DBD8D7 ;
+}
+.topnav {
+  background-color: #423D3B;
+  overflow: hidden;
+  box-shadow: 2px 2px 10px grey;
+}
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 8px 10px;
+  text-decoration: none;
+  font-size: 15px;
+}
+.topnav a:hover {
+  text-decoration: underline;
+}
+.center {
+  margin-top: 7px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+.midnav {
+  background-color: #F9F8F1;
+  overflow: hidden;
+  box-shadow: 2px 2px 10px grey;
+}
+.midnav a{
+  transition:  border-color .5s,
+              background-color .5s;
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 40px 42px;
+  text-decoration: none;
+  font-size: 20px;
+  border-bottom: 1px;
+  border-bottom-style: solid;
+  border-color: #F9F8F1;
+}
+.midnav a.logo{
+  border-bottom-style: none;
+  float: left;
+  display: block;
+  color: black;
+  object-position: center;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-size: 40px;
+}
+.midnav a:hover {
+  background-color: #E7DFCC;
+  color: #784231;
+  border-color: #83493A;
+}
+.midnav a.logo:hover{
+  background-color: inherit;
+  color: black;
+  border-bottom-style: none;
+  border-bottom-width: none;
+  border-color: inherit;
+}
+.container{
+  display: flex;
+	flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 15px;
+  padding-top: 3px;
+}
+.third {
+  width:20%;
+}
+.containerbox{
+  transition: background-color .5s,
+              box-shadow .25s;
+  padding: 30px;
+  margin: 10px;
+  font-size: 20px;
+  background-color: #F0F0EC;
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px grey;
+}
+.containerbox:hover{
+  background-color: #F9F8F1;
+  box-shadow: 2px 2px 3px grey;
+}
+.containerbox h1{
+  font-family: 'Times New Roman', serif;
+  text-align: center;
+  font-size: 24px;
+}
+.containerbox img{
+  border-radius: 5px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+footer{
+  background-color: #1A1B20;
+  overflow: hidden;
+  color: #B7BFCC;
+  height: 40px;
+  text-align: center;
+  padding-top: 20px;
+  padding-right: 20px;
+}

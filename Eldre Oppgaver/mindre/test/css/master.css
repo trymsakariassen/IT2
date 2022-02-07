@@ -1,0 +1,202 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  height: 100%;
+  margin: 0;
+  font-size: 28px;
+  background-color: white;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: background-color .5s, color .5s;
+}
+
+.dark-mode{
+  transition: background-color .5s, color .5s, border-color .5s;
+  background-color: #202020;
+  color: white;
+}
+.dark-mode input{
+  transition: background-color .5s, color .5s;
+  background-color: #1f1f1f;
+  color: #b3b3b3;
+  border-style: solid;
+  border-width: thin;
+  border-color: #b3b3b3;
+}
+.dark-mode button{
+  transition: background-color .5s, color .5s;
+  background-color: #1f1f1f;
+  color: #b3b3b3;
+  border-style: solid;
+  border-width: thin;
+  border-color: #b3b3b3;
+}
+.dark-mode button:hover{
+  transition: background-color .5s, color .5s;
+  background-color: #b3b3b3;
+  color: #737373;
+  border-style: solid;
+  border-width: thin;
+  border-color: #737373;
+}
+
+#navbar button{
+  transition: background-color .5s, color .5s;
+  float: right;
+  margin-right: 20px;
+  margin-top: 5px;
+  border-radius: 0;
+  padding: 10px;
+  background-color: #292929;
+  color:white;
+  border-width: 0;
+}
+
+#navbar button:hover{
+  transition: background-color .5s, color .5s;
+  float: right;
+  margin-right: 20px;
+  margin-top: 5px;
+  border-radius: 0;
+  padding: 10px;
+  background-color: white;
+  color:black;
+  border-width: 0;
+}
+
+.topheader {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #202020;
+  padding: 2px;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #181818;
+}
+
+#navbar a {
+  transition:
+  color .25s,
+  background-color .25s;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+    transition:
+  color .25s,
+  background-color .25s;
+  background-color: white;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.content {
+  overflow: hidden;
+  display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: flex-start;
+  padding: 16px;
+  padding-left: 40px;
+  width: 100%;
+}
+.contentbox {
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: thin;
+}
+.third {
+  width: 33%;
+}
+.fourth {
+  width: 25%;
+}
+.half{
+  width: 50%;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+.footer{
+  background-color:black;
+  position:absolute;
+  bottom:0;
+  padding: 10px;
+  width:100%;
+  overflow: hidden;
+}
+.footer a{
+  border-radius: 12px;
+  transition:
+  color .25s,
+  background-color .25s;
+  padding: 15px;
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+}
+.footer a:hover{
+  transition:
+  color .25s,
+  background-color .25s;
+  background-color: white;
+  color: black;
+}
+.mattespill p{
+  font-size: 20px;
+}
+.mattespill h1{
+  font-size: 25px;
+}
+.mattespill input{
+  transition: background-color .5s, color .5s;
+  padding: 10px;
+  border-width: thin;
+}
+.mattespill button{
+  transition: background-color .5s, color .5s;
+  border-width: thin;
+  padding: 10px;
+}
+input{
+  transition: background-color .5s, color .5s;
+  padding: 10px;
+  border-width: thin;
+}
+.PO p{
+  font-size: 25;
+  margin: 8px;
+}
+button{
+  transition: background-color .5s, color .5s;
+  border-width: thin;
+  padding: 10px;
+}

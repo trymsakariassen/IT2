@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="brukerinput.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"
+    <title></title>
+  </head>
+  <body>
+    <form>
+      <h1>Bestillingsskjema for Bø turishotell</h1>
+
+      <label for="navn">Navn</label> <br>
+      <input type="text" name="" id="navn" placeholder=""> <br><br>
+
+      <label for="nummer">Telefonnummer</label> <br>
+      <input type="tel" name="" id="nummer"value="+47 "> <br><br>
+
+      <label for="gjest">Antall gjester</label> <br>
+      <select class="" name="" id="gjest">
+        <option value="">1</option>
+        <option value="">2</option>
+        <option value="">3</option>
+        <option value="">4</option>
+        <option value="">5</option>
+        <option value="">6</option>
+      </select> <br><br>
+
+      <input type="radio" id="fro" name="frokost" value="200">
+      <label for="fro">Med Frokost (200 kr)</label><br>
+      <input type="radio" id="ifro" name="frokost" value="IkkeFrokost">
+      <label for="ifro">Uten Frokost</label><br><br>
+
+      <label for="Sommarland">Ekstraaktiviteter</label><br>
+      <input type="checkbox" id="Sommarland" name="Sommarland" value="300">
+      <label for="Sommarland">Dagspass til Bø Sommarland (300 kr)</label> <br>
+      <input type="checkbox" id="Klatrepark" name="Klatrepark" value="250">
+      <label for="Klatrepark">Dagspass til Høyt og Lavt Klatrepark (250 kr)</label> <br>
+      <input type="checkbox" id="Fruktgård" name="Fruktgård" value="200">
+      <label for="Fruktgård">Omvisning på fruktgård (200 kr)</label> <br>
+      <input type="checkbox" id="Telemark" name="Telemark" value="800">
+      <label for="Telemark">Dagstur på Telemarkskanalen (800 kr)</label> <br><br><br>
+
+      <button type="button" name="button" onclick=regnut()>Bestill</button>
+    </form>
+
+    <p id="totaltekst"></p>
+
+    <script type="text/javascript">
+      function regnut(){
+
+        var pris = 1000;
+
+        if (document.getElementById('Sommarland').checked){
+          pris = parseFloat(300)+parseFloat(pris);
+        }
+        if (document.getElementById('Klatrepark').checked){
+          pris = parseFloat(250)+parseFloat(pris);
+        }
+        if (document.getElementById('Fruktgård').checked){
+          pris = parseFloat(200)+parseFloat(pris);
+        }
+        if (document.getElementById('Telemark').checked){
+          pris = parseFloat(800)+parseFloat(pris);
+        }
+        if (document.getElementById('fro').checked){
+          pris = parseFloat(200)+parseFloat(pris);
+        }
+        document.getElementById('totaltekst').innerHTML = "Pris: " + pris + " kr."
+
+
+      }
+
+    </script>
+  </body>
+</html>
